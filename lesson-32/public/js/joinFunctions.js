@@ -31,7 +31,7 @@ $(document).ready(() => {
    * Listing 32.3 (p. 467)
    * 메시지 수신 시 채팅 아이콘 애니메이팅
    */
-  socket.on("message", () => {
+  socket.on("message", message => {
     displayMessage(message);
     for (let i = 0; i < 2; i++) {
       $(".chat-icon").fadeOut(200).fadeIn(200);
