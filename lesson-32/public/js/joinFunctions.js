@@ -43,7 +43,7 @@ $(document).ready(() => {
    * Listing 32.2 (p. 465)
    * 사용자 접속이 끊겼을 때 메시지 출력
    */
-  socket.on("user disconnected", () =>{
+  socket.on("user disconnected", () => {
     displayMessage({
       userName: "System",
       content: "User disconnected!" 
@@ -181,4 +181,4 @@ let displayMessage = (message) => {
 let getCurrentUserClass = (id) => {
   let userId = $("#chat-user-id").val();
   return userId === id ? "current-user" : "";
-};
+}

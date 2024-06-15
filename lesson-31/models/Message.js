@@ -18,7 +18,7 @@ const mongoose = require("mongoose"),
             required: true
         },
         userId: {
-            type: Schema.Types.objectId,
+            type: Schema.Types.ObjectId,
             ref: "User",
             required: true
         }

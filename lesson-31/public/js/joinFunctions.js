@@ -150,10 +150,10 @@ let addJoinButtonListener = () => {
  * 채팅 폼으로부터 hidden field 값 끌어오기
  */
 let displayMessage = (message) => {
-  $("#chat").perpend(
+  $("#chat").prepend(
     $("<li>").html(
       `<strong class="message ${getCurrentUserClass(message.userId)}">
-      ${message.userFullName || message.userFullName || message.username || "Anonymous"}
+      ${message.userFullName || message.username || "Anonymous"}
       </strong>: ${message.content}`
     )
   );
